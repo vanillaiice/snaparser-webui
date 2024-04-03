@@ -1,6 +1,6 @@
 {
 	"name": "snaparser_webui",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"scripts": {
 		"dev": "vite dev",
 		"prod": "node server.js",
