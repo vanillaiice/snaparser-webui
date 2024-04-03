@@ -1,8 +1,9 @@
 {
-	"name": "frontend",
-	"version": "0.0.1",
+	"name": "snaparser_webui",
+	"version": "0.1.0",
 	"scripts": {
 		"dev": "vite dev",
+		"prod": "node server.js",
 		"build": "vite build",
 		"preview": "vite preview",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
@@ -33,6 +34,10 @@
 	"type": "module",
 	"dependencies": {
 		"beercss": "^3.5.1",
-		"highlight.js": "^11.9.0"
+		"compression": "^1.7.4",
+		"express": "^4.19.2",
+		"highlight.js": "^11.9.0",
+		"https": "^1.0.0",
+		"morgan": "^1.10.0"
 	}
 }
