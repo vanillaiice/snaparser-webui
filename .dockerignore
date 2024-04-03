@@ -1,0 +1,17 @@
+.git
+.gitignore
+node_modules
+build
+.env.local
+.npmrc
+.eslintrc.cjs
+.eslintignore
+.prettierrc
+.prettierignore
+.svelte-kit
+LICENSE.txt
+README.md
+# Caddyfile*
+Dockerfile*
+.dockerignore
+Makefile
