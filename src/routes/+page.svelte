@@ -2,6 +2,12 @@
 	import Highlight from 'svelte-highlight';
 	import { json } from 'svelte-highlight/languages';
 
+	const VITE_API_URL = import.meta.env.VITE_API_URL;
+	const API_URL =
+		VITE_API_URL === undefined || VITE_API_URL === ''
+			? 'http://localhost:8888/upload'
+			: VITE_API_URL;
+
 	let classSnackbar: string = '';
 	let messageSnackbar: string = '';
 	let showSnackbar: boolean = false;
@@ -38,7 +44,7 @@
 	let parseChats = async (t: any) => {
 		loading = true;
 		formData = new FormData(t);
-		fetch(import.meta.env.VITE_API_URL, {
+		fetch(API_URL, {
 			method: 'POST',
 			body: formData
 		})
